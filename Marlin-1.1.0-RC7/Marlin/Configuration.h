@@ -478,7 +478,7 @@
 //  (0,0)
 #define X_PROBE_OFFSET_FROM_EXTRUDER +30  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER -3  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -3.3   // Z offset: -below +above  [the nozzle](для самого первого -1.55)
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -3.8   // Z offset: -below +above  [the nozzle](для самого первого -1.55)
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
 // Speed for the first approach when double-probing (with PROBE_DOUBLE_TOUCH)
