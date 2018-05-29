@@ -478,7 +478,7 @@
 //  (0,0)
 #define X_PROBE_OFFSET_FROM_EXTRUDER -57  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER -27  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -1.9   // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -0.8   // Z offset: -below +above  [the nozzle]
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -608,8 +608,8 @@
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 300
-#define Y_MAX_POS 300
+#define X_MAX_POS 283
+#define Y_MAX_POS 308
 #define Z_MAX_POS 360
 
 //===========================================================================
@@ -679,10 +679,10 @@
 
   #if ENABLED(AUTO_BED_LEVELING_GRID)
 
-    #define LEFT_PROBE_BED_POSITION 50
-    #define RIGHT_PROBE_BED_POSITION 150
-    #define FRONT_PROBE_BED_POSITION 50
-    #define BACK_PROBE_BED_POSITION 150
+    #define LEFT_PROBE_BED_POSITION 97
+    #define RIGHT_PROBE_BED_POSITION 210
+    #define FRONT_PROBE_BED_POSITION 122
+    #define BACK_PROBE_BED_POSITION 210
 
     #define MIN_PROBE_EDGE 10 // The Z probe minimum square sides can be no smaller than this.
 
@@ -749,8 +749,8 @@
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,3200/4,1000}  // default steps per unit for Ultimaker
-#define DEFAULT_MAX_FEEDRATE          {300, 300, 15, 25}    // (mm/sec)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,3200/4,4000}  // default steps per unit for Ultimaker
+#define DEFAULT_MAX_FEEDRATE          {300, 300, 4, 25}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {1000,1000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          1000    // X, Y, Z and E acceleration in mm/s^2 for printing moves
